@@ -16,15 +16,15 @@ int main()
   int length = bpm.size();
 */
 int rate;
-int highest;
+int highest = -2;
 
  // cout << "bpm is currently size, " << length <<endl;
 //  cout << "The last item in bpm is ..." << bpm[length-1] << endl;
-  cout << "The items in bpm are ..." << endl;
+/*  cout << "The items in bpm are ..." << endl;
   for (int i=0; i<bpm.size(); i++){
     cout << bpm[i] << endl;
   }
-
+*/
   do{
     cout << "please" << endl;
     cin >>rate;
@@ -32,8 +32,8 @@ int highest;
   }while(rate != -1);
 
 
-for (int i=1; i<bpm.size(); i++){            // loop to check for largest number in vector
-  if ( bpm[i-1] < bpm[i]){
+for (int i=0; i<bpm.size(); i++){            // loop to check for largest number in vector
+  if ( bpm[i] > highest){
     highest = bpm[i];
   }
 }
