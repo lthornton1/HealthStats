@@ -32,7 +32,7 @@ int highest;
   }while(rate != -1);
 
 
-for (int i=1; i<bpm.size(); i++){
+for (int i=1; i<bpm.size(); i++){            // loop to check for largest number in vector
   if ( bpm[i-1] < bpm[i]){
     highest = bpm[i];
   }
